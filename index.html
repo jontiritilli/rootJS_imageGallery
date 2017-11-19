@@ -4,13 +4,14 @@
 	<title>gallery</title>
 	<style>
 		.galleryImg{
-			width: 25%;
+			width: 23%;
 			float: left;
 			position: relative;
 
 		}
 		.galleryImg > img{
-			width: 100%;
+			width: 170px;
+			height: 170px;
 
 		}
 		.galleryImg:hover > img{
@@ -18,7 +19,7 @@
 			left: 0px;
 			top: 0px;
 			z-index: 1;
-			width: 50vw;
+			width: 30vw;
 		}
 	</style>
 </head>
@@ -29,14 +30,14 @@
 	<script>
 
 	var images = [
-		//add images here based on photos in the images folder.
-		//each image name needs to be a string
-		//remember, the images are in a folder called "image"
+		'images/7a6f37eded84a07844dc308b8e3fa790.jpg',
+		'images/maxresdefault.jpg',
+		'images/photo-129299193.jpg',
+		'images/photographing-landscapes-3e.jpg',
+		'images/tropical-beach-landscapes.jpg',
 	];
-
-	// call one of the functions below.  Give it an argument of the
-	// images array above
 	
+	displayImagesInGallery(images)
 
 	/******** you don't need to modify anything below this line ******/
 	function displayImagesInGallery(imageArray){
